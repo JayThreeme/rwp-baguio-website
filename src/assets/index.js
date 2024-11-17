@@ -1,28 +1,28 @@
 //logo
-import rwp_black from "./logo/rwp_black";
-import rwp from "./logo/rwp";
-import rwpbaguio from "./logo/rwpbaguio";
-import rwpbaguio_black from "./logo/rwpbaguio_black";
+import rwp_black from "./logo/rwp_black.svg";
+import rwp from "./logo/rwp.svg";
+import rwpbaguio from "./logo/rwpbaguio.png";
+import rwpbaguio_black from "./logo/rwpbaguio_black.png";
 
 //socials
-import facbook from "./socials/facbook";
-import instagram from "./socials/instagram";
-import mail from "./socials/mail";
-import telegram from "./socials/telegram";
+import facebook from "./socials/facebook.svg";
+import instagram from "./socials/instagram.png";
+import mail from "./socials/mail.svg";
+import telegram from "./socials/telegram.svg";
 
 //stock
-import philippines_circle from "./stock/philippines_circle";
-import philippine_rec from "./stock/philippine_rec";
-import runner from "./stock/runner";
-import running_blue from "./stock/running_blue";
-import running from "./stock/running";
+import philippines_circle from "./stock/philippines_circle.svg";
+import philippine_rec from "./stock/philippines_rec.svg";
+import runner from "./stock/runner.svg";
+import running_blue from "./stock/running_blue.svg";
+import running from "./stock/running.svg";
 
-export default {
+export {
   rwp,
   rwp_black,
   rwpbaguio,
   rwpbaguio_black,
-  facbook,
+  facebook,
   instagram,
   mail,
   telegram,
