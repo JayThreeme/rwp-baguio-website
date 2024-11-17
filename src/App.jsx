@@ -1,15 +1,11 @@
-import { rwp } from "./assets";
+import { BrowserRouter } from "react-router-dom";
+import NavigationBar from "./components/NavigationBar";
 
 const App = () => {
   return (
-    <>
-      <div>
-        <a href="" target="">
-          <img src={rwp} className="logo" alt="rwplogo" />
-        </a>
-      </div>
-      <h1>asdasd</h1>
-    </>
+    <BrowserRouter basename="/rwp-baguio-website">
+      <NavigationBar />
+    </BrowserRouter>
   );
 };
 
