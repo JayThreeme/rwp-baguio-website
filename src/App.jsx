@@ -4,7 +4,9 @@ import NavigationBar from "./components/NavigationBar";
 const App = () => {
   return (
     <BrowserRouter basename="/rwp-baguio-website">
-      <NavigationBar />
+      <div className="relative z-0 bg-primary  ">
+        <NavigationBar />
+      </div>
     </BrowserRouter>
   );
 };

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,45 +29,12 @@
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
@@ -79,4 +48,33 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 8 22 / var(--tw-bg-opacity)) /* #050816 */;
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 166 195 / var(--tw-bg-opacity)) /* #aaa6c3 */;
+}
+
+.bg-tertiary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 16 48 / var(--tw-bg-opacity)) /* #151030 */;
+}
+
+.bg-black-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 13 37 / var(--tw-bg-opacity)) /* #100d25 */;
+}
+
+.bg-black-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 3 37 / var(--tw-bg-opacity)) /* #090325 */;
+}
+
+.bg-hero-pattern {
+  background-image: url("/src/assets/herobg.png");
 }

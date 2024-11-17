@@ -1,3 +1,6 @@
+import menu from "./menu.svg";
+import close from "./close.svg";
+
 //logo
 import rwp_black from "./logo/rwp_black.svg";
 import rwp from "./logo/rwp.svg";
@@ -18,6 +21,8 @@ import running_blue from "./stock/running_blue.svg";
 import running from "./stock/running.svg";
 
 export {
+  menu,
+  close,
   rwp,
   rwp_black,
   rwpbaguio,
