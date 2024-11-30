@@ -1,4 +1,4 @@
-import { menu, rwp } from "../assets";
+import { menu, rwp, close } from "../assets";
 import { useState } from "react";
 import { navigationInfo } from "../constants";
 import { Link } from "react-router-dom";
@@ -22,9 +22,6 @@ const NavigationBar = () => {
           }}
         >
           <img src={rwp} alt="logo" className="w-14 object-contain" />
-          {/* <p className="text-white text-[18px] font-bold cursor-pointer flex">
-              Jimmy &nbsp;<span className="sm:block hidden">| Portfolio</span>
-            </p> */}
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navigationInfo.map((nav) => (
@@ -35,7 +32,7 @@ const NavigationBar = () => {
               } hover:text-[#915EFF] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
@@ -44,7 +41,7 @@ const NavigationBar = () => {
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w=[28px] h-[28px] object-contain cursor-pointer"
+            className="w=[25px] h-[25px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
           <div
@@ -64,7 +61,7 @@ const NavigationBar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>

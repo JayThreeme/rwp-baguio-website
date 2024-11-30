@@ -20,6 +20,11 @@ import runner from "./stock/runner.svg";
 import running_blue from "./stock/running_blue.svg";
 import running from "./stock/running.svg";
 
+//photos
+import image1 from "./photos/image1.jpg";
+import image2 from "./photos/image2.jpg";
+import image3 from "./photos/image3.jpg";
+
 export {
   menu,
   close,
@@ -36,4 +41,7 @@ export {
   runner,
   running_blue,
   running,
+  image1,
+  image2,
+  image3,
 };
