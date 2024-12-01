@@ -10,7 +10,7 @@ const NavigationBar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed  top-0 z-20`}
     >
       <div className="w-full flex justify-between items-center mx-auto">
         <Link
@@ -47,7 +47,7 @@ const NavigationBar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-black absolute top-20 right-0 mx-4  min-w-[160px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navigationInfo.map((nav) => (

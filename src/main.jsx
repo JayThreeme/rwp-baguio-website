@@ -12,7 +12,7 @@ const root = document.getElementById("root");
 ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <Routes>
-      <Route path="rwp-baguio-website/" element={<App />}>
+      <Route path="/rwp-baguio-website/" element={<App />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="joinus" element={<JoinUs />} />
