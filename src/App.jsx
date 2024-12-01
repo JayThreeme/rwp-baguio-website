@@ -18,7 +18,7 @@ const App = () => {
   return (
     <>
       <div className="relative flex flex-col">
-        <div className="">
+        <div className="relative w-full">
           <NavigationBar />
         </div>
         <div className="relative h-screen w-full overflow-hidden">

@@ -3,17 +3,17 @@ import { facebook, instagram, telegram } from "../assets";
 const JoinUs = () => {
   const socialLinks = [
     {
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/groups/620831922311362",
       icon: facebook,
       label: "Facebook",
     },
     {
-      href: "https://instagram.com",
+      href: "https://www.instagram.com/rwp_baguio/",
       icon: instagram,
       label: "Instagram",
     },
     {
-      href: "https://telegram.org",
+      href: "t.me/rwpbaguioarchives",
       icon: telegram,
       label: "Telegram",
     },
@@ -43,6 +43,8 @@ const JoinUs = () => {
   return (
     <>
       <div className="">
+        <h1 className="text-5xl font-bold mb-6">Join Us!</h1>
+        <h2 className="text-2xl font-bold mb-6">Weekly Run Schedules</h2>
         <div className="overflow-x-auto ">
           <table className="min-w-full shadow sm:py-4 py-4 ">
             <thead>
@@ -55,7 +57,7 @@ const JoinUs = () => {
             </thead>
             <tbody>
               {schedules.map((schedule, index) => (
-                <tr key={index} className="border-t border-gray-200">
+                <tr key={index} className="border-t ">
                   <td className="py-2 px-4">{schedule.day}</td>
                   <td className="py-2 px-4">{schedule.time}</td>
                   <td className="py-2 px-4">{schedule.location}</td>
@@ -64,6 +66,9 @@ const JoinUs = () => {
               ))}
             </tbody>
           </table>
+          <p className="text-stone-400 ">
+            Note: Follow us social media page for more running schedules
+          </p>
         </div>
 
         {/* Social Media Icons */}
@@ -76,7 +81,7 @@ const JoinUs = () => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500 text-white hover:bg-blue-600 transition duration-300"
+                className="w-16 h-16 flex items-center justify-center rounded-full bg-white text-white hover:bg-blue-600 transition duration-300"
                 aria-label={link.label}
               >
                 <img

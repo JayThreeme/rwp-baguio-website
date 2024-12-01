@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <>
@@ -18,10 +20,10 @@ const About = () => {
             <div className="rounded-lg shadow-lg p-6 ">
               <h3 className="text-xl font-semibold mb-4">What We Do</h3>
               <p>
-                We organize weekly group runs, fun runs, and trail runs for our
-                members. Our club also hosts special events like charity runs
-                and running workshops to enhance skills and build connections
-                within the community.
+                We organize weekly group runs and trail runs for our members.
+                Our group also hosts special events like charity runs and
+                running workshops to enhance skills and build connections within
+                the community.
               </p>
             </div>
 
@@ -43,12 +45,17 @@ const About = () => {
               Join us and be part of a vibrant running community. Together, we
               achieve more!
             </p>
-            <a
+            {/* <a
               href="/join-us"
+              
+            > */}
+            <Link
+              to="../joinus"
               className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
             >
+              {" "}
               Join the Club
-            </a>
+            </Link>
           </div>
         </div>
       </div>
