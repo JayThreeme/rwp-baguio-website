@@ -22,7 +22,7 @@ const JoinUs = () => {
   const schedules = [
     {
       day: "Thursday",
-      time: "5:30 AM",
+      time: "6:00 AM",
       location: "Athletic",
       description: "Speed Run",
     },
