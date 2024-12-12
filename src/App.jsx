@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import { useState, useEffect } from "react";
 import { image1, image2, image3 } from "./assets";
-
+import { AnimatePresence } from "framer-motion";
 const App = () => {
   const images = [image1, image2, image3]; // Replace these with your actual image URLs
 
@@ -34,7 +34,9 @@ const App = () => {
             ))}
           </div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black/50 ">
-            <Outlet />
+            <AnimatePresence mode="wait">
+              <Outlet className="" />
+            </AnimatePresence>
           </div>
         </div>
 
